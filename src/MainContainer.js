@@ -55,7 +55,6 @@ class Main extends Component {
     this.props.actions.createDeleteAskFromFirebaseList(id);
   }
   savePoints() {
-    console.log(this.props.points);
     this.props.actions.createSavePoints({
       points: this.props.points,
       id: 1 // user id will be here
