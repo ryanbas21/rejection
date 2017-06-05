@@ -1,13 +1,13 @@
 import React from 'react';
 import withRedux from 'next-redux-wrapper';
 import store from '../src/store';
-import Main from '../src/MainContainer';
+import Login from '../src/Login/Login';
 import Head from '../src/head/head';
 
-const Index = props =>
+const Index = () =>
   <div>
     <Head />
-    <Main />
+    <Login />
   </div>;
 
 export default withRedux(store)(Index);

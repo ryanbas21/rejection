@@ -1,8 +1,8 @@
-import { all } from 'redux-saga/effects';
-import pointsSaga from '../points/points.saga';
-import historySaga from '../history/history.saga';
+import { all, fork } from 'redux-saga/effects';
 import listSaga from '../list/list.saga';
+import loginSaga from '../Login/login.saga';
+import signOutSaga from '../Login/signout-saga';
 
 export default function* rootSaga() {
-  yield [pointsSaga(), historySaga(), listSaga()];
+  yield [listSaga(), loginSaga(), signOutSaga()];
 }
