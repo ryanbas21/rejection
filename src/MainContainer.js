@@ -38,6 +38,7 @@ class Main extends Component {
   }
   handleAccepted(event, { data }) {
     this.props.actions.addAsk(data);
+
   }
   render() {
     const { list, points, history, actions: { deleteAsk } } = this.props;
